@@ -1,5 +1,3 @@
-/* style.css - исправленный только для адаптивности */
-
 :root {
     --blue: #36a9f5;
     --primary-blue: #0056b3;
@@ -31,7 +29,6 @@ body {
     color: var(--blue);
 }
 
-/* Шапка и Навигация - АДАПТИВНОСТЬ */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -89,7 +86,6 @@ body {
 .logo-img {
     height: 45px;
     width: auto;
-    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -219,39 +215,6 @@ body {
     margin: 0 auto;
 }
 
-/* АДАПТИВНОСТЬ ДЛЯ СЛАЙДЕРА */
-/* @media (max-width: 1024px) {
-    .header {
-        height: 80vh;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        height: 70vh;
-    }
-    
-    .hero-content {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        height: 60vh;
-        max-height: 500px;
-    }
-    
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-    
-    .hero-content p {
-        font-size: 1rem;
-    }
-} */
-
-/* Секции - АДАПТИВНОСТЬ */
 .section {
     padding: clamp(2rem, 5vw, 4rem) 10%;
 }
@@ -290,7 +253,6 @@ h2:after {
     background-color: var(--light-blue);
 }
 
-/* Карточки достопримечательностей - АДАПТИВНОСТЬ */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
@@ -340,7 +302,6 @@ h2:after {
     }
 }
 
-/* Видео контейнер - АДАПТИВНОСТЬ */
 .video-container {
     max-width: 800px;
     margin: 30px auto;
@@ -372,7 +333,6 @@ h2:after {
     }
 }
 
-/* Секция причин - АДАПТИВНОСТЬ */
 .reasons-section {
     background: white;
     border-radius: 12px;
@@ -413,7 +373,6 @@ h2:after {
     padding-left: 28px;
 }
 
-/* Инфографика/Факты - АДАПТИВНОСТЬ */
 .facts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -546,7 +505,6 @@ h2:after {
     }
 }
 
-/* Футер - АДАПТИВНОСТЬ */
 .footer {
     background-color: var(--dark-blue);
     color: var(--white);
