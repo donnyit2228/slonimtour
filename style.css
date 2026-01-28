@@ -237,6 +237,9 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
     position: relative;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    padding: 0 10px; 
 }
 
 h2:after {
@@ -247,6 +250,12 @@ h2:after {
     background: #207cca;
     margin: 15px auto 30px;
     border-radius: 2px;
+    max-width: 100%; 
+}
+
+#sights {
+    width: 100%;
+    overflow: hidden;
 }
 
 .bg-light {
