@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слоним — Туристический гид</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html" class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Coat_of_Arms_of_Slonim.svg/500px-Coat_of_Arms_of_Slonim.svg.png" alt="Герб Слонима" class="logo-img">
+                <span>СлонимТур</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html">О городе</a></li>
+                <li><a href="./routes/routes.html">Маршруты</a></li>
+                <li><a href="#footer">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://minsknews.by/wp-content/uploads/2022/09/228400-01.jpg');">
+                <div class="hero-content">
+                    <h1>Добро пожаловать в <span class="light-text">Слоним!</span></h1>
+                    <p>Один из старейших городов Беларуси с богатой историей.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://sanchaborok.by/wp-content/uploads/2024/04/jirovichi1-1024x640.jpg');">
+                <div class="hero-content">
+                    <h1>Духовное наследие</h1>
+                    <p>Посетите Жировичский монастырь - жемчужину православной архитектуры.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://proregion24.by/upload/iblock/393/42hkv4j77lq98qolqxnkmn6bfggwawku.jpg');">
+                <div class="hero-content">
+                    <h1>Культурная столица</h1>
+                    <p>Откройте для себя старинные усадьбы и легенды рода Сапег.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- О городе -->
+        <section id="about" class="section reveal">
+            <h2>История сквозь века</h2>
+            <div class="video-container">
+                <!-- <iframe 
+                    src="https://www.youtube.com/embed/rJTHQpwU_uU?si=gsuf4tJ3yz1FGTZl" 
+                    title="Видео о Слониме" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe> -->
+                <iframe 
+        src="https://www.youtube.com/embed/qxGH9NbW0bo?si=4zIwz98ZDdH8mxBs" 
+        title="Слоним - древний город Беларуси" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+            </div>
+            <p>Приветствуем вас в Слониме — одном из древнейших и самых самобытных городов Беларуси.
+                Это не просто точка на карте между Гродно и Брестом. Это место, где время замедляет ход,
+                чтобы вы могли почувствовать дыхание веков: шепот монастырских стен, отблеск барочных фасадов
+                в водах Щары и уют тихих, мощеных улочек. Слоним — идеальная остановка для тех, кто ищет 
+                аутентичную Беларусь, богатую историю и спокойное, философское путешествие.</p>
+        </section>
+
+        <!-- Главные достопримечательности -->
+        <section id="sights" class="section bg-light reveal">
+            <h2>Главные достопримечательности</h2>
+            <div class="grid">
+                <a href="church.html" class="card-link">
+                    <div class="card">
+                        <h3>Костел св. Андрея</h3>
+                        <p>Потрясающий памятник архитектуры позднего барокко XVIII века.</p>
+                    </div>
+                </a>
+                <a href="synagogue.html" class="card-link">
+                    <div class="card">
+                        <h3>Синагога</h3>
+                        <p>Одна из старейших сохранившихся синагог в Беларуси (1642 год).</p>
+                    </div>
+                </a>
+                <a href="theater.html" class="card-link">
+                    <div class="card">
+                        <h3>Театр Огинского</h3>
+                        <p>Место, где когда-то гремела слава оперной труппы и уникальной водной сцены.</p>
+                    </div>
+                </a>
+                <a href="theater.html" class="card-link">
+                    <div class="card">
+                        <h3>Канал Огинского</h3>
+                        <p>Уникальный гидротехнический объект, построенный Михалом Казимиром Огинским.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Почему Слоним? -->
+        <section class="section reveal">
+            <h2>Почему Слоним? 5 причин остаться здесь подольше</h2>
+            <div class="reasons-section">
+                <div class="reason-item">
+                    <h3 class="reason-title"><i class="fas fa-landmark"></i> Живой учебник архитектуры</h3>
+                    <p>Здесь на одной площади могут соседствовать величественная синагога XVII века, изящные костелы в стиле виленского барокко и строгая православная церковь. Каждая эпоха оставила здесь свой автограф.</p>
+                </div>
+                <div class="reason-item">
+                    <h3 class="reason-title"><i class="fas fa-tree"></i> Столица "Слонимского Полесья"</h3>
+                    <p>Город — лучшая отправная точка для знакомства с уникальной природой и культурой этого региона: сплав по Щаре, посещение легендарной Свято-Успенской Жировичской лавры в 10 км от города или усадьбы "Альбертин".</p>
+                </div>
+                <div class="reason-item">
+                    <h3 class="reason-title"><i class="fas fa-globe-europe"></i> Город контрастов и гармонии</h3>
+                    <p>Слоним — это многовековой диалог культур: белорусской, польской, еврейской. Это история, которую можно увидеть в камне и почувствовать в атмосфере.</p>
+                </div>
+                <div class="reason-item">
+                    <h3 class="reason-title"><i class="fas fa-archway"></i> Неожиданная "итальянская" изюминка</h3>
+                    <p>Жемчужина города — монастырь бернардинок с его изумительным фасадом, который часто называют "кусочком Италии в Беларуси".</p>
+                </div>
+                <div class="reason-item">
+                    <h3 class="reason-title"><i class="fas fa-peace"></i> Атмосфера покоя</h3>
+                    <p>Здесь нет туристической суеты. Вы сможете неспешно исследовать город, вести диалог с историей и насладиться знаменитым слонимским гостеприимством за чашкой кофе в уютном кафе.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Инфографика/Факты -->
+        <section class="section facts-grid reveal">
+            <div class="fact-item">
+                <span class="fact-number">1252</span>
+                <p>Год первого упоминания в Ипатьевской летописи</p>
+            </div>
+            <div class="fact-item">
+                <span class="fact-number">70+</span>
+                <p>Памятников архитектуры и истории</p>
+            </div>
+            <div class="fact-item">
+                <span class="fact-number">10 км</span>
+                <p>До знаменитого Жировичского монастыря</p>
+            </div>
+        </section>
+
+        <!-- Знаменитые личности -->
+        <section class="section reveal">
+            <h2>Слонимские «Афины»</h2>
+            <div class="history-flex">
+                <div class="history-text">
+                    <h3>Михаил Казимир Огинский</h3>
+                    <p>В XVIII веке Слоним стал культурным центром Европы. Огинский построил здесь канал, основал типографию и создал театр, где сцена могла превращаться в бассейн для водных спектаклей. Слоним того времени называли «Полесскими Афинами».</p>
+                </div>
+                <div class="history-image">
+                    <img src="https://slonim.gov.by/uploads/images/s000701_303065.jpg" alt="История Слонима">
+                </div>
+            </div>
+        </section>
+
+        <!-- Советы туристу (Чек-лист) -->
+        <section class="section reveal">
+            <h2>Что стоит сделать в Слониме</h2>
+            <div class="checklist">
+                <div class="check-card"><input type="checkbox"> Найти старинные солнечные часы у стен костела.</div>
+                <div class="check-card"><input type="checkbox"> Увидеть легендарный канал Огинского.</div>
+                <div class="check-card"><input type="checkbox"> Сфотографироваться с памятником Льву Сапеге.</div>
+                <div class="check-card"><input type="checkbox"> Прогуляться по набережной реки Щара.</div>
+                <div class="check-card"><input type="checkbox"> Попробовать местные деликатесы в кафе.</div>
+                <div class="check-card"><input type="checkbox"> С интересом и комфортом провести время.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer reveal">
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Coat_of_Arms_of_Slonim.svg/500px-Coat_of_Arms_of_Slonim.svg.png" alt="Герб Слонима" class="logo-img">
+                <span class="logo-text">СлонимТур</span>
+            </div>
+            <p class="copyright">© 2026 Все права защищены.<br>Путешествуйте по Беларуси вместе с нами.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Навигация</h4>
+            <ul class="footer-links">
+                <li><a href="./index.html">О городе</a></li>
+                <li><a href="./routes/routes.html">Маршруты</a></li>
+                <li><a href="#footer">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Контакты</h4>
+            <div class="contact-info">
+                <p>📞 <a href="tel:+375291234567">+375 (29) 123-45-67</a></p>
+                <p>✉️ <a href="mailto:info@slonimtour.by">info@slonimtour.by</a></p>
+                <p>📍 г. Слоним, ул. Тополёвая, 43</p>
+            </div>
+        </div>
+
+        <div class="footer-section qr-block">
+            <h4>Актуальные новости</h4>
+            <div class="qr-wrapper">
+                <a href="https://t.me/slonimtour"><img src="./images/qr code/qrcode_302947439_906e8b94a923873701ea915921fc6e90.png"
+                alt="QR Код" 
+                class="qr-image"></a>
+            </div>
+            <p class="qr-subtext">Отсканируйте камерой смартфона</p>
+        </div>
+
+    </div>
+</footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

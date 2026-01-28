@@ -1,0 +1,782 @@
+/* Основной контент */
+.routes-hero {
+    background: linear-gradient(rgba(30, 87, 153, 0.8), rgba(32, 124, 202, 0.8)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.routes-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.routes-hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Секции маршрутов */
+.route-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid #207cca;
+    margin-top: 20px;
+}
+
+.route-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.route-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.route-icon {
+    background: #207cca;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.route-title {
+    font-size: 28px;
+    color: #1e5799;
+}
+
+.route-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.route-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.route-stops {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.route-stops h3 {
+    color: #1e5799;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.route-stops ol {
+    padding-left: 20px;
+}
+
+.route-stops li {
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.route-stops strong {
+    color: #207cca;
+}
+
+.route-info {
+    padding: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-icon {
+    background: #e9f5ff;
+    color: #207cca;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.route-tip {
+    background: #fff9e6;
+    border-left: 4px solid #ffd700;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Подвал */
+footer {
+    background: #1e5799;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.footer-column p, .footer-column a {
+    color: #d0e4ff;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #ffd700;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #2d6cb0;
+    color: #a8c6ff;
+    font-size: 14px;
+}
+
+:root {
+    --blue: #36a9f5;
+    --primary-blue: #0056b3;
+    --light-blue: #eef4ff;
+    --dark-blue: #003366;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.light-text {
+    color: var(--blue);
+}
+
+/* Шапка и Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+/* Навигация - исправлена позиция */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Прижимает навигацию к правому краю */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-blue);
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Бургер-меню */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Слайдер */
+.header {
+    position: relative;
+    height: 98vh;
+    overflow: hidden;
+}
+
+.hero-slider {
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    color: white;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0px 0px 20px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero-content h1, .hero-content p {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили Футера для страницы маршрутов */
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 4rem 10% 2rem;
+    border-top: 5px solid var(--primary-blue);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    align-items: start;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--primary-blue);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #cbdcf7;
+    text-decoration: none;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+    padding-left: 8px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-logo .logo-img {
+    height: 50px;
+}
+
+.qr-wrapper {
+    width: 140px;
+    height: 140px;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.qr-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.qr-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.qr-subtext {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    opacity: 0.8;
+    max-width: 150px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .route-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .routes-hero h1 {
+        font-size: 36px;
+    }
+    
+    .routes-hero p {
+        font-size: 18px;
+    }
+    
+    /* Бургер-меню на мобильных */
+    .burger-menu {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        margin: 0;
+        padding: 0;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links li a {
+        margin-left: 0;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Анимация бургер-меню */
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-section h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .qr-wrapper {
+        margin: 0 auto 15px;
+    }
+    
+    .qr-subtext {
+        margin: 0 auto;
+    }
+    
+    /* Шапка и Навигация - ОБНОВЛЕНО */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Это уже есть, но убедитесь */
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Лого - левая часть */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    cursor: pointer;
+    z-index: 1001;
+    flex-shrink: 0; /* Чтобы лого не сжималось */
+}
+
+/* Навигация для десктопа */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-blue);
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Бургер-меню - ПРАВИЛЬНО ПРИЖАТО К ПРАВОМУ КРАЮ */
+.burger-menu {
+    display: none; /* Скрыто на десктопе */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+    margin-left: auto; /* Это прижимает бургер к правому краю */
+}
+
+.burger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+/* Контейнер для навигации и бургера - ДОБАВЬТЕ ЭТО */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Прижимает содержимое к правому краю */
+    flex: 1; /* Занимает все доступное пространство */
+}
+
+/* Обновите медиа-запросы */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex; /* Показываем бургер на мобильных */
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        margin: 0;
+        padding: 0;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links li a {
+        margin-left: 0;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links li a:hover {
+        background-color: var(--light-blue);
+        color: var(--primary-blue);
+    }
+    
+    /* Убедитесь, что на мобильных навигация скрыта */
+    .nav-links:not(.active) {
+        display: none;
+    }
+    
+    /* Анимация бургер-меню */
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+        background-color: var(--primary-blue);
+    }
+    
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+        background-color: var(--primary-blue);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem 3%;
+    }
+    
+    .nav-links {
+        width: 80%;
+    }
+    
+    .burger-menu {
+        width: 28px;
+        height: 20px;
+    }
+}
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .routes-hero h1 {
+        font-size: 28px;
+    }
+    
+    .routes-hero p {
+        font-size: 16px;
+    }
+    
+    .route-title {
+        font-size: 24px;
+    }
+    
+    .route-section {
+        padding: 20px;
+    }
+    
+    /* Мобильная навигация */
+    .nav-links {
+        width: 80%;
+    }
+}
+
+/* Добавьте в CSS */
+body.menu-open {
+    overflow: hidden;
+}
